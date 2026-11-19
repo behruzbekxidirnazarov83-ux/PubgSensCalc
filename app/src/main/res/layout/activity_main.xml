@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sezuvchanlik kalkulyatori" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <EditText android:id="@+id/etCamera" android:hint="Camera" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etAds" android:hint="ADS" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etRedDot" android:hint="Red Dot / Holo" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etX2" android:hint="2x" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etX3" android:hint="3x" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etX4" android:hint="4x" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etX6" android:hint="6x" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/etX8" android:hint="8x" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/btnCalculate" android:text="Camera'dan hisoblash" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" />
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <EditText android:id="@+id/etProfileName" android:hint="Profil nomi" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+            <Button android:id="@+id/btnSave" android:text="Saqlash" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btnLoad" android:text="Profillarni ko'rish" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#CCCCCC" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sozlamalar diagnostikasi" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <Button android:id="@+id/btnDiagnose" android:text="Tekshirish" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <LinearLayout android:id="@+id/diagnosticsContainer" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
